@@ -7,13 +7,7 @@ let laps = document.querySelector("#laps");
 let lap = document.querySelector("#lap-btn");
 let count = 0;
 
-// start  -  stop btn
-function startToStop() {
-  start.innerText = "Stop";
-}
-function stopToStart() {
-  start.innerText = "Start";
-}
+
 
 // start and stop timer
 
