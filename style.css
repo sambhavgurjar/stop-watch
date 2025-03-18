@@ -1,0 +1,38 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+/* background-color: black; */
+height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 20px;
+
+
+}
+#main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.sub{
+
+    width: 100px;
+    height: 100px;
+    background-color: bisque;
+    color: black;
+    text-align: center;
+    align-content: center;
+    font-size: 40px;
+    border-radius: 50%;
+}
+
+
+.btn{
+    margin-inline: 20px;
+}
