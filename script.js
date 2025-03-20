@@ -14,9 +14,11 @@ let count = 0;
 start.addEventListener("click", () => {
   count++;
   if (start.innerText == "Start") {
-    if (count > 0) {
+    if (count == 1 ) {
       lap.classList.toggle("lap-btn");
       lap.classList.toggle("lap-btn1");
+      
+      
     }
     if (count > 1) {
       lap.textContent = "Lap";
@@ -26,6 +28,7 @@ start.addEventListener("click", () => {
   } else if (start.innerText == "Stop") {
     if (count > 1) {
       lap.textContent = "Reset";
+     
     }
     start.innerText = "Start";
     clearInterval(intervalId);
@@ -46,6 +49,8 @@ lap.addEventListener("click", () => {
     scnd.textContent = "00";
     ms.textContent = "00";
     lap.textContent = "Lap";
+    lap.classList.toggle("lap-btn");
+    lap.classList.toggle("lap-btn1");
     count = 0;
     while (laps.firstChild) {
       laps.removeChild(laps.firstChild);
